@@ -1,0 +1,60 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="form-side">
+      <h2>BİZİMLE İLETİŞİME GEÇİN</h2>
+      <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <input
+          type="text"
+          name="adSoyad"
+          placeholder="Kullanıcı adı"
+          required
+          ngModel
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="E-posta@ornek.com"
+          required
+          email
+          ngModel
+        />
+        <textarea
+          name="mesaj"
+          placeholder="Mesajınız"
+          rows="5"
+          required
+          ngModel
+        ></textarea>
+        <button type="submit">Gönder</button>
+      </form>
+
+      <div class="separator">VEYA</div>
+      <div class="social-links">
+        <a href="https://www.facebook.com/TofasKurumsal/">
+          <img src="/assets/facebook.png" alt="Facebook" />
+        </a>
+        <a href="https://www.youtube.com/@tofas">
+          <img src="/assets/youtube.png" alt="YouTube" />
+        </a>
+        <a href="https://www.linkedin.com/company/tofas">
+          <img src="/assets/linkedin.png" alt="LinkedIn" />
+        </a>
+        <a href="https://www.instagram.com/tofas">
+          <img src="/assets/instagram.png" alt="Instagram" />
+        </a>
+      </div>
+    </div>
+
+    <div class="map-side">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3044.7531407256192!2d29.061944699999998!3d40.259017199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ca3ff6bf884ee5%3A0x500121e035b3ca0!2zVG9mYcWfIFTDvHJrIE90b21vYmlsIEZhYnJpa2FzxLEgQS7Fni4!5e0!3m2!1str!2str!4v1752583940251!5m2!1str!2str"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+<div class="whole">
+  <!-- Arama Çubuğu -->
+  <div class="search-bar">
+    <input
+      type="text"
+      [(ngModel)]="searchQuery"
+      placeholder="Örnek: Sağ ön far"
+      (input)="onSearch()"
+    />
+    <button>Ürün Ara</button>
+  </div>
+
+  <!-- Ürün Kutuları -->
+  <div class="container">
+    <div class="product" *ngFor="let product of filteredProducts">
+      <img [src]="product.imageUrl" alt="{{ product.name }}" />
+      <h3>{{ product.name }}</h3>
+      <div class="description-area">
+        <p>Birim fiyat: {{ product.price }} TL</p>
+      </div>
+
+      <!-- Spacer boşluğu -->
+      <div style="flex-grow: 1"></div>
+
+      <!-- Buton grubu -->
+      <div class="button-group">
+        <button (click)="addToCart(product)">Sepete Ekle</button>
+        <button (click)="showProductDetails(product)">Detaylar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Detay Kartı -->
+  <div class="modal" *ngIf="selectedProduct">
+    <div class="modal-content">
+      <span class="close-button" (click)="closeProductDetails()">Geri</span>
+      <img [src]="selectedProduct.imageUrl" alt="{{ selectedProduct.name }}" />
+      <h2>{{ selectedProduct.name }}</h2>
+      <p>{{ selectedProduct.description }}</p>
+    </div>
+  </div>
+</div>

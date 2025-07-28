@@ -1,0 +1,127 @@
+<div class="main">
+  <h1 style="margin-bottom: 0.5em">Parça Yönetimi</h1>
+  <hr style="margin-bottom: 2em" />
+  <div style="display: flex; justify-content: end">
+    <button class="btn add-btn" (click)="openModal()">Parça Ekle</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Parça Adı</th>
+        <th>Marka</th>
+        <th>Birim Fiyat</th>
+        <th>Miktar</th>
+        <th>Düzenle</th>
+        <th>Sil</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let part of paginatedParts">
+        <td>{{ part.id }}</td>
+        <td>{{ part.ad }}</td>
+        <td>{{ part.marka }}</td>
+        <td>{{ part.fiyat }}</td>
+        <td>{{ part.stokAdedi }}</td>
+        <td>
+          <button class="btn edit-btn" (click)="openModal(part)">
+            Düzenle
+          </button>
+        </td>
+        <td>
+          <button class="btn delete-btn" (click)="openDeleteModal(part.id)">
+            Sil
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="pagination">
+    <button (click)="prevPage()" [disabled]="currentPage === 1">‹</button>
+
+    <ng-container
+      *ngFor="let page of [].constructor(totalPages); let i = index"
+    >
+      <button
+        [class.active-page]="currentPage === i + 1"
+        (click)="goToPage(i + 1)"
+      >
+        {{ i + 1 }}
+      </button>
+    </ng-container>
+
+    <button (click)="nextPage()" [disabled]="currentPage === totalPages">
+      ›
+    </button>
+  </div>
+
+  <div class="pagination-info">
+    {{ startItemIndex }} - {{ endItemIndex }} / {{ parts.length }} parça
+    gösteriliyor
+  </div>
+</div>
+
+<!-- Ekle / Düzenle Modal -->
+<div class="modal" [style.display]="modalVisible ? 'block' : 'none'">
+  <div class="modal-content">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <h3 class="modal-heading">
+      {{ isEditMode ? "Parça Düzenle" : "Parça Ekle" }}
+    </h3>
+    <form class="modal-form" (ngSubmit)="saveChanges()">
+      <input
+        class="modal-input"
+        type="text"
+        [(ngModel)]="selectedPart.id"
+        name="id"
+        [readonly]="isEditMode"
+        placeholder="ID"
+      />
+      <input
+        class="modal-input"
+        type="text"
+        [(ngModel)]="selectedPart.ad"
+        name="name"
+        placeholder="İsim"
+      />
+      <input
+        class="modal-input"
+        type="text"
+        [(ngModel)]="selectedPart.marka"
+        name="brand"
+        placeholder="Marka"
+      />
+      <input
+        class="modal-input"
+        type="number"
+        [(ngModel)]="selectedPart.stokAdedi"
+        name="quantity"
+        placeholder="Miktar"
+      />
+      <input
+        class="modal-input"
+        type="text"
+        [(ngModel)]="selectedPart.fiyat"
+        name="price"
+        placeholder="Fiyat"
+      />
+      <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+      <button class="modal-form-save-btn" type="button" (click)="saveChanges()">
+        Kaydet
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- Silme Onay Modalı -->
+<div class="modal" *ngIf="showDeleteModal">
+  <div class="modal-content">
+    <span class="close" (click)="closeDeleteModal()">&times;</span>
+    <h3>Bu parçayı silmek istediğinize emin misiniz?</h3>
+    <div style="text-align: right; margin-top: 20px">
+      <button class="btn-cancel" (click)="closeDeleteModal()">Vazgeç</button>
+      <button class="btn-confirm" (click)="confirmDelete()">Evet, Sil</button>
+    </div>
+  </div>
+</div>

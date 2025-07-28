@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+}
+
+header {
+  background: linear-gradient(to right, #7ca8b8 30%, #f2d388 100%);
+
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-header,
+.right-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.tofas-home-logo img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  margin-right: 20px;
+}
+
+.tofas-home-logo:hover img {
+  transform: scale(1.2);
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header nav a {
+  color: rgb(36, 20, 20);
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  transition: all 0.3s ease;
+}
+
+header nav a:hover {
+  color: #fff;
+  transform: scale(1.1);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.right-header a {
+  color: rgb(36, 20, 20);
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.right-header a + a {
+  margin-left: 30px;
+}
+
+.right-header a:hover {
+  color: #fff;
+  transform: scale(1.1);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.right-header img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.right-header img:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7));
+}
+
+.login-link {
+  margin-top: 5px;
+}
+
+.container-body {
+  position: relative;
+  z-index: 1;
+  color: #000;
+
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url("/assets/carimage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section #brandsPhoto {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer .brands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 7px;
+}
+
+footer .brands img {
+  margin: 0 5px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.copyright {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.user-menu {
+  position: relative;
+  display: inline-block;
+  margin-left: 30px; /* Üye Girişi ile aynı boşluk */
+}
+
+.user-menu button {
+  background: none;
+  border: none;
+  font-size: 22px;
+  font-weight: bold;
+  color: rgb(36, 20, 20);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.user-menu button:hover {
+  color: #fff;
+  transform: scale(1.1);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.user-dropdown {
+  position: absolute;
+  right: 0;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  padding: 10px 0;
+  margin-top: 8px;
+  z-index: 100;
+  min-width: 120px;
+}
+
+.user-dropdown li {
+  padding: 8px 20px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.user-dropdown li:hover {
+  background-color: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+  .tofas-home-logo img {
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .right-header[_ngcontent-ng-c3016548385]
+    a[_ngcontent-ng-c3016548385]
+    + a[_ngcontent-ng-c3016548385] {
+    margin-left: 0;
+  }
+}

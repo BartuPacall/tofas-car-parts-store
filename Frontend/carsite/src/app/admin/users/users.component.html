@@ -1,0 +1,143 @@
+<div class="main">
+  <h1 class="content-heading">Kullanıcı Yönetimi</h1>
+  <hr style="margin-bottom: 2em" />
+  <div style="display: flex; justify-content: end">
+    <button class="btn add-btn" (click)="openModal()">Kullanıcı Ekle</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Kullanıcı Adı</th>
+        <th>Rol</th>
+        <th>Şifre</th>
+        <th>Düzenle</th>
+        <th>Sil</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of paginatedUsers; let i = index">
+        <td>{{ user.id }}</td>
+        <td>{{ user.kullaniciAdi }}</td>
+        <td>{{ user.rol }}</td>
+        <td>{{ "*".repeat(user.sifre.length) }}</td>
+        <td>
+          <button class="btn edit-btn" (click)="openModal(user)">
+            Düzenle
+          </button>
+        </td>
+        <td>
+          <button class="btn delete-btn" (click)="openDeleteModal(i)">
+            Sil
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="pagination">
+    <button (click)="prevPage()" [disabled]="currentPage === 1">‹</button>
+
+    <ng-container
+      *ngFor="let page of [].constructor(totalPages); let i = index"
+    >
+      <button
+        [class.active-page]="currentPage === i + 1"
+        (click)="goToPage(i + 1)"
+      >
+        {{ i + 1 }}
+      </button>
+    </ng-container>
+
+    <button (click)="nextPage()" [disabled]="currentPage === totalPages">
+      ›
+    </button>
+  </div>
+
+  <div class="pagination-info">
+    {{ startItemIndex }} - {{ endItemIndex }} / {{ users.length }} kullanıcı
+    gösteriliyor
+  </div>
+</div>
+
+<!-- Kullanıcı Ekle/Düzenle Modal -->
+<div class="modal" *ngIf="modalVisible">
+  <div class="modal-content">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <h3 class="modal-heading">
+      {{ isEditMode ? "Kullanıcı Düzenle" : "Kullanıcı Ekle" }}
+    </h3>
+
+    <form class="modal-form">
+      <input
+        class="modal-input"
+        type="text"
+        name="id"
+        [(ngModel)]="selectedUser.id"
+        [readonly]="isEditMode"
+        placeholder="ID"
+      />
+
+      <input
+        class="modal-input"
+        type="text"
+        name="name"
+        [(ngModel)]="selectedUser.kullaniciAdi"
+        placeholder="İsim"
+      />
+
+      <select class="modal-input" name="role" [(ngModel)]="selectedUser.rol">
+        <option value="Admin">Admin</option>
+        <option value="Kullanıcı">Kullanıcı</option>
+      </select>
+
+      <div style="position: relative">
+        <input
+          class="modal-input"
+          [type]="showPassword ? 'text' : 'password'"
+          name="password"
+          [(ngModel)]="selectedUser.sifre"
+          placeholder="Şifre"
+          style="width: 100%; padding-right: 40px"
+        />
+        <button
+          type="button"
+          (click)="togglePasswordVisibility()"
+          style="
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+          "
+          aria-label="Şifreyi göster/gizle"
+        >
+          {{ showPassword ? "🙈" : "👁️" }}
+        </button>
+      </div>
+
+      <div *ngIf="errorMessage" style="color: red; margin-bottom: 10px">
+        {{ errorMessage }}
+      </div>
+
+      <button type="button" class="modal-form-save-btn" (click)="saveChanges()">
+        Kaydet
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- Silme Onay Modalı -->
+<div class="modal" *ngIf="showDeleteModal">
+  <div class="modal-content">
+    <span class="close" (click)="closeDeleteModal()">&times;</span>
+    <h3>Bu kullanıcıyı silmek istediğinize emin misiniz?</h3>
+    <div style="text-align: right; margin-top: 20px">
+      <button class="btn-cancel" (click)="closeDeleteModal()">Vazgeç</button>
+      <button class="btn-confirm" (click)="confirmDelete()">Evet, Sil</button>
+    </div>
+  </div>
+</div>

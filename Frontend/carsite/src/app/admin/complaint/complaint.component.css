@@ -1,0 +1,115 @@
+.table-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+.content-heading {
+  margin-bottom: 0.5em;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.btn-delete {
+  background-color: rgb(139, 31, 31);
+}
+
+.custom-table th,
+.custom-table td {
+  border: 1px solid #5d2222;
+  padding: 10px;
+  text-align: center;
+}
+
+.custom-table th {
+  background-color: #f5f5f5;
+}
+
+.btn-read {
+  padding: 6px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-delete {
+  padding: 6px 10px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pages button {
+  margin: 0 3px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.pages .active {
+  color: rgb(187, 66, 66);
+  font-weight: bold;
+  border: none;
+}
+.pagination button:hover:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.modal {
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-heading {
+  margin-bottom: 0.5em;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.btn-cancel {
+  padding: 6px 12px;
+  background-color: gray;
+  color: white;
+  border: none;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.btn-confirm {
+  padding: 6px 12px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}

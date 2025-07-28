@@ -1,0 +1,17 @@
+<div class="welcome-screen" *ngIf="showWelcome">
+  <h1>Hoşgeldiniz!</h1>
+  <p>
+    Bu panel üzerinden sisteminizi kolayca yönetebilirsiniz.<br />
+    - Sol menüden istediğiniz sayfaya geçiş yapabilirsiniz.<br />
+    - Sorularınız için destek kısmına başvurabilirsiniz. <br />
+    - Lütfen işinizi bitirdiğinizde çıkış yapmayı unutmayınız.
+  </p>
+  <button (click)="start()" class="btn-start">Başlayalım</button>
+
+  <!-- Konfeti canvas -->
+  <canvas #confettiCanvas class="confetti-canvas"></canvas>
+</div>
+
+<div *ngIf="!showWelcome">
+  <ng-content></ng-content>
+</div>

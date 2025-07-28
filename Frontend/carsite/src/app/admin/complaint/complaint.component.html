@@ -1,0 +1,76 @@
+<div class="table-container">
+  <h1 class="content-heading">İletişim Yönetimi</h1>
+  <hr style="margin-bottom: 2em" />
+
+  <table class="custom-table">
+    <thead>
+      <tr>
+        <th>Kullancı Adı</th>
+        <th>Mail</th>
+        <th>Mesaj</th>
+        <th>Sil</th>
+      </tr>
+    </thead>
+
+    <tbody *ngFor="let msg of pagedMessages; let i = index">
+      <tr>
+        <td>{{ msg.name }}</td>
+        <td>{{ msg.email }}</td>
+        <td>
+          <button class="btn-read" (click)="openMessage(msg.message)">
+            Mesaj Oku
+          </button>
+        </td>
+        <td>
+          <button class="btn-delete" (click)="openDeleteModal(i)">🗑</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="pagination">
+    <span>
+      {{ allMessages.length }} mesajdan
+      {{ (currentPage - 1) * itemsPerPage + 1 }} -
+      {{ mathMin(currentPage * itemsPerPage, allMessages.length) }} arası
+      gösteriliyor
+    </span>
+
+    <div class="pages">
+      <button (click)="prevPage()" [disabled]="currentPage === 1">Geri</button>
+
+      <button
+        *ngFor="let page of [].constructor(totalPages); let i = index"
+        [class.active]="currentPage === i + 1"
+        (click)="goToPage(i + 1)"
+      >
+        {{ i + 1 }}
+      </button>
+
+      <button (click)="nextPage()" [disabled]="currentPage === totalPages">
+        İleri
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Mesaj Modal -->
+<div class="modal" *ngIf="showModal">
+  <div class="modal-content">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <h3 class="modal-heading">Mesaj Detayı</h3>
+    <p>{{ selectedMessage }}</p>
+  </div>
+</div>
+
+<!-- Silme Onay Modalı -->
+<div class="modal" *ngIf="showDeleteModal">
+  <div class="modal-content">
+    <span class="close" (click)="closeDeleteModal()">&times;</span>
+    <h3>Silmek istediğinize emin misiniz?</h3>
+    <div style="text-align: right; margin-top: 20px">
+      <button class="btn-cancel" (click)="closeDeleteModal()">Vazgeç</button>
+      <button class="btn-confirm" (click)="confirmDelete()">Evet, Sil</button>
+    </div>
+  </div>
+</div>

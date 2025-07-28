@@ -1,0 +1,119 @@
+<div class="payment-container">
+  <h2>Ödeme Sayfası</h2>
+
+  <form (ngSubmit)="onSubmit()" #paymentForm="ngForm" novalidate>
+    <!-- Kart İsmi -->
+    <div class="form-group">
+      <label for="cardName">Kart Üzerindeki İsim</label>
+      <input
+        type="text"
+        id="cardName"
+        name="cardName"
+        [(ngModel)]="paymentData.cardName"
+        required
+        #cardName="ngModel"
+        placeholder="Ad Soyad"
+      />
+      <small *ngIf="cardName.invalid && cardName.touched" class="error-text">
+        Bu alan boş bırakılamaz.
+      </small>
+    </div>
+
+    <!-- Kart Numarası -->
+    <div class="form-group">
+      <label for="cardNumber">Kart Numarası</label>
+      <input
+        type="text"
+        id="cardNumber"
+        name="cardNumber"
+        maxlength="19"
+        [(ngModel)]="paymentData.cardNumber"
+        (input)="formatCardNumber()"
+        required
+        #cardNumber="ngModel"
+        placeholder="XXXX XXXX XXXX XXXX"
+      />
+      <small
+        *ngIf="cardNumber.invalid && cardNumber.touched"
+        class="error-text"
+      >
+        Kart numarası 16 haneli olmalı ve sadece rakam içermelidir.
+      </small>
+    </div>
+
+    <!-- Son Kullanma Tarihi -->
+    <div class="form-group">
+      <label for="expiry">Son Kullanma Tarihi (MM/YY)</label>
+      <input
+        type="text"
+        id="expiry"
+        name="expiry"
+        maxlength="5"
+        [(ngModel)]="paymentData.expiry"
+        (input)="formatExpiry()"
+        required
+        #expiry="ngModel"
+        placeholder="MM/YY"
+      />
+      <small *ngIf="expiry.invalid && expiry.touched" class="error-text">
+        Geçerli bir tarih girin (örn: 05/27).
+      </small>
+    </div>
+
+    <!-- CVV -->
+    <div class="form-group">
+      <label for="cvv">CVV</label>
+      <input
+        type="text"
+        id="cvv"
+        name="cvv"
+        maxlength="3"
+        pattern="^[0-9]{3}$"
+        [(ngModel)]="paymentData.cvv"
+        required
+        #cvv="ngModel"
+        placeholder="Örnek: 123"
+      />
+      <small *ngIf="cvv.invalid && cvv.touched" class="error-text">
+        CVV 3 haneli ve sadece rakamlardan oluşmalıdır.
+      </small>
+    </div>
+    <!-- Adres -->
+    <div class="form-group">
+      <label for="address">Adres</label>
+      <input
+        type="text"
+        id="address"
+        name="address"
+        [(ngModel)]="paymentData.address"
+        (input)="updateMapUrl()"
+        placeholder="Adresinizi girin (örn: Bursa, Osmangazi)"
+        required
+        #address="ngModel"
+      />
+      <small *ngIf="address.invalid && address.touched" class="error-text">
+        Lütfen geçerli bir adres girin.
+      </small>
+    </div>
+
+    <!-- Harita Görünümü -->
+    <div class="form-group" *ngIf="mapUrl">
+      <label>Adres Harita Görünümü</label>
+      <iframe
+        width="100%"
+        height="250"
+        frameborder="0"
+        [src]="mapUrl"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <button type="submit" [disabled]="!paymentForm.form.valid">
+      Ödeme Yap
+    </button>
+  </form>
+
+  <div *ngIf="paymentSuccess" class="success-message">
+    ✅ Ödeme başarıyla tamamlandı!
+  </div>
+</div>

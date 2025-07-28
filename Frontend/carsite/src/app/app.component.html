@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tofaş Web Sayfası</title>
+  </head>
+  <body>
+    <!--Header Section-->
+    <!-- HEADER -->
+    <header>
+      <div class="left-header">
+        <a href="https://tofas.com.tr/" class="tofas-home-logo">
+          <img src="assets/TOFAŞ.png" alt="logo_tofask" style="height: 60px" />
+        </a>
+        <nav>
+          <a routerLink="/brands">Anasayfa</a>
+          <a routerLink="/contact">İletişim</a>
+          <a *ngIf="userRole === 'admin'" routerLink="/admin">Panel</a>
+        </nav>
+      </div>
+
+      <div class="right-header">
+        <a routerLink="/basket" class="basket-link">
+          <img
+            src="assets/basket.png"
+            class="basket-icon"
+            alt="basket"
+            style="width: 28px; margin-top: 13.81px"
+          />
+        </a>
+
+        <!-- Eğer giriş yapılmışsa kullanıcı adını göster ve dropdown açılır menü -->
+        <div
+          *ngIf="userRole; else loginLink"
+          class="user-menu"
+          style="position: relative; display: inline-block"
+        >
+          <button
+            (click)="toggleDropdown()"
+            class="login-link"
+            style="
+              font-size: 22px;
+              background: none;
+              border: none;
+              cursor: pointer;
+            "
+          >
+            {{ userRole }} ▼
+          </button>
+
+          <ul *ngIf="dropdownOpen" class="user-dropdown">
+            <li (click)="logout()">Çıkış Yap</li>
+          </ul>
+        </div>
+
+        <ng-template #loginLink>
+          <a routerLink="/login" class="login-link" style="font-size: 22px">
+            Üye Girişi
+          </a>
+        </ng-template>
+      </div>
+    </header>
+
+    <body class="container-body">
+      <router-outlet></router-outlet>
+    </body>
+    <!-- MAIN CONTENT -->
+    <section>
+      <img id="brandsPhoto" src="assets/brands.jpg" alt="Brands" />
+    </section>
+    <footer>
+      <div class="brands">
+        <img src="assets/logo__koc.png" alt="Koç" style="height: 42px" />
+        <p class="copyright" style="font-size: larger">
+          © 2025 Tofaş Türk Otomobil Fabrikası A.Ş. Tüm hakları saklıdır.
+        </p>
+        <img
+          src="assets/stellantis.png"
+          alt="stellantis"
+          style="height: 42px"
+        />
+      </div>
+    </footer>
+  </body>
+</html>

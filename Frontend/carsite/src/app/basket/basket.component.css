@@ -1,0 +1,107 @@
+.cart-container {
+  display: flex;
+  gap: 20px;
+  background: rgba(0, 0, 0, 0.21);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  color: white;
+  width: 80%;
+  max-width: 700px;
+  align-items: center;
+}
+
+/* Sayfa başlığı */
+h2 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 32px;
+  color: rgb(0, 0, 0);
+}
+
+/* Sepet boşsa gösterilen mesaj */
+.empty-cart-message {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 40px;
+  color: rgb(0, 0, 0);
+}
+
+.product-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-details {
+  flex: 1;
+}
+
+.product-details h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.product-details p {
+  margin: 4px 0;
+  font-size: 16px;
+}
+
+.product-details button {
+  margin-right: 10px;
+  padding: 8px 14px;
+  font-size: 14px;
+  border-radius: 20px;
+  background-color: white;
+  color: #6a0dad;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.product-details button:hover {
+  background-color: #e6e6e6;
+}
+
+.total-price-container {
+  background: rgba(0, 0, 0, 0.21);
+  backdrop-filter: blur(12px);
+  color: white;
+  padding: 20px 40px;
+  margin: 30px auto;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+}
+
+.total-price-container h3 {
+  font-size: 26px;
+  margin: 0;
+}
+.checkout-button {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 14px 28px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 30px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.checkout-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}

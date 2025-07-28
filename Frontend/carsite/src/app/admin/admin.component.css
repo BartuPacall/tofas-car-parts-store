@@ -1,0 +1,47 @@
+.admin-container {
+  display: flex;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+.sidebar {
+  width: 240px;
+  background: #515151;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.menu {
+  background: #515151;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.menu a:hover,
+.menu a.active-link {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.content {
+  flex: 1;
+  background-color: rgb(195, 191, 191);
+}
+
+.logout-page {
+  cursor: pointer;
+}

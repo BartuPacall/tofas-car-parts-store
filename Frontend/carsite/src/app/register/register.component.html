@@ -1,0 +1,52 @@
+<!-- src/app/register/register.component.html -->
+<div class="register-container">
+  <div class="register-box">
+    <h2>Kayıt Ol</h2>
+    <form (ngSubmit)="onSubmit()" #registerForm="ngForm">
+      <div class="input-group">
+        <input
+          type="text"
+          name="username"
+          [(ngModel)]="username"
+          placeholder="Kullanıcı Adı"
+          required
+        />
+        <i class="fa fa-user icon"></i>
+      </div>
+      <div class="input-group">
+        <input
+          type="email"
+          name="email"
+          [(ngModel)]="email"
+          placeholder="E-posta"
+          required
+        />
+        <i class="fa fa-envelope icon"></i>
+      </div>
+      <div class="input-group">
+        <input
+          type="password"
+          name="password"
+          [(ngModel)]="password"
+          placeholder="Şifre"
+          required
+        />
+        <i class="fa fa-lock icon"></i>
+      </div>
+      <div class="input-group">
+        <input
+          type="password"
+          name="confirmPassword"
+          [(ngModel)]="confirmPassword"
+          placeholder="Şifreni Onayla"
+          required
+        />
+        <i class="fa fa-lock icon"></i>
+      </div>
+      <button type="submit">Kayıt Ol</button>
+      <p class="login-text">
+        Zaten bir hesabın var mı? <a routerLink="/login">Giriş Yap </a>
+      </p>
+    </form>
+  </div>
+</div>

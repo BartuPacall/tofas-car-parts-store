@@ -1,0 +1,90 @@
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background: rgba(0, 0, 0, 0.21);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 60px 50px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-group input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.input-group input {
+  width: 100%;
+  padding: 16px 45px 16px 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  color: rgb(0, 0, 0);
+}
+
+.input-group .icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: white;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.options a {
+  color: #d5bfff;
+  text-decoration: none;
+}
+
+button {
+  width: 100%;
+  padding: 16px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  background-color: white;
+  color: #6a0dad;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #e6e6e6;
+}
+
+.register-text {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.register-text a {
+  color: #d5bfff;
+  text-decoration: none;
+}
