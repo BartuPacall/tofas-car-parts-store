@@ -3,20 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|c:\\users\\bartu\\desktop\\intern_project\\backend\\controllers\\iletisimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|solutionrelative:controllers\\iletisimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|c:\\users\\bartu\\desktop\\intern_project\\backend\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|solutionrelative:controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|c:\\users\\bartu\\desktop\\intern_project\\backend\\controllers\\kullanicicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|solutionrelative:controllers\\kullanicicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|c:\\users\\bartu\\desktop\\intern_project\\backend\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|solutionrelative:models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|c:\\users\\bartu\\desktop\\intern_project\\backend\\migrations\\20250728125103_addpaymenttable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|solutionrelative:migrations\\20250728125103_addpaymenttable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|c:\\users\\bartu\\desktop\\intern_project\\backend\\migrations\\intern_projectdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|solutionrelative:migrations\\intern_projectdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|c:\\users\\bartu\\desktop\\intern_project\\backend\\data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|solutionrelative:data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|c:\\users\\bartu\\desktop\\intern_project\\backend\\migrations\\20250723084927_update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|solutionrelative:migrations\\20250723084927_update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|c:\\users\\bartu\\desktop\\intern_project\\backend\\migrations\\20250725084332_database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|solutionrelative:migrations\\20250725084332_database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|c:\\users\\bartu\\desktop\\intern_project\\backend\\migrations\\20250727214445_addiletisimprimarykey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|solutionrelative:migrations\\20250727214445_addiletisimprimarykey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|c:\\users\\bartu\\desktop\\intern_project\\backend\\models\\iletisim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|solutionrelative:models\\iletisim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|c:\\users\\bartu\\desktop\\intern_project\\backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|c:\\users\\bartu\\desktop\\intern_project\\backend\\models\\kullanici.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|solutionrelative:models\\kullanici.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|c:\\users\\bartu\\desktop\\intern_project\\backend\\controllers\\kullanicicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|solutionrelative:controllers\\kullanicicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|c:\\users\\bartu\\desktop\\intern_project\\backend\\controllers\\iletisimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|solutionrelative:controllers\\iletisimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|c:\\users\\bartu\\desktop\\intern_project\\backend\\models\\siparisurun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,28 +63,12 @@
       "RelativeMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|solutionrelative:models\\siparis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|c:\\users\\bartu\\desktop\\intern_project\\backend\\models\\kullanici.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|solutionrelative:models\\kullanici.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|c:\\users\\bartu\\desktop\\intern_project\\backend\\controllers\\karsilastirmacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|solutionrelative:controllers\\karsilastirmacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|c:\\users\\bartu\\desktop\\intern_project\\backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|c:\\users\\bartu\\desktop\\intern_project\\backend\\migrations\\20250725084332_database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|solutionrelative:migrations\\20250725084332_database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|c:\\users\\bartu\\desktop\\intern_project\\backend\\controllers\\parcacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|solutionrelative:controllers\\parcacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|c:\\users\\bartu\\desktop\\intern_project\\backend\\migrations\\20250727214445_addiletisimprimarykey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97E41F09-9899-4FF4-A061-167DB636CC95}|Intern_Project.csproj|solutionrelative:migrations\\20250727214445_addiletisimprimarykey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,19 +86,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "KullaniciController.cs",
-              "DocumentMoniker": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Controllers\\KullaniciController.cs",
-              "RelativeDocumentMoniker": "Controllers\\KullaniciController.cs",
-              "ToolTip": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Controllers\\KullaniciController.cs",
-              "RelativeToolTip": "Controllers\\KullaniciController.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAowDUAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "20250723084927_update.cs",
+              "DocumentMoniker": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Migrations\\20250723084927_update.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250723084927_update.cs",
+              "ToolTip": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Migrations\\20250723084927_update.cs",
+              "RelativeToolTip": "Migrations\\20250723084927_update.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T22:26:14.928Z"
+              "WhenOpened": "2025-07-28T12:58:34.781Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 2,
+              "Title": "20250728125103_AddPaymentTable.cs",
+              "DocumentMoniker": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Migrations\\20250728125103_AddPaymentTable.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250728125103_AddPaymentTable.cs",
+              "ToolTip": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Migrations\\20250728125103_AddPaymentTable.cs",
+              "RelativeToolTip": "Migrations\\20250728125103_AddPaymentTable.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwCQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T12:58:19.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Intern_ProjectDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Migrations\\Intern_ProjectDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\Intern_ProjectDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Migrations\\Intern_ProjectDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Migrations\\Intern_ProjectDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T12:58:18.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Data\\DbContext.cs",
+              "RelativeDocumentMoniker": "Data\\DbContext.cs",
+              "ToolTip": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Data\\DbContext.cs",
+              "RelativeToolTip": "Data\\DbContext.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T18:21:12.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PaymentController.cs",
+              "DocumentMoniker": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Controllers\\PaymentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PaymentController.cs",
+              "ToolTip": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Controllers\\PaymentController.cs",
+              "RelativeToolTip": "Controllers\\PaymentController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T12:38:03.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "Models\\Payment.cs",
+              "ToolTip": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Models\\Payment.cs",
+              "RelativeToolTip": "Models\\Payment.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAUwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T12:33:46.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "20250727214445_AddIletisimPrimaryKey.cs",
               "DocumentMoniker": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Migrations\\20250727214445_AddIletisimPrimaryKey.cs",
               "RelativeDocumentMoniker": "Migrations\\20250727214445_AddIletisimPrimaryKey.cs",
@@ -90,104 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SiparisUrun.cs",
-              "DocumentMoniker": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Models\\SiparisUrun.cs",
-              "RelativeDocumentMoniker": "Models\\SiparisUrun.cs",
-              "ToolTip": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Models\\SiparisUrun.cs",
-              "RelativeToolTip": "Models\\SiparisUrun.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T21:37:25.046Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Siparis.cs",
-              "DocumentMoniker": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Models\\Siparis.cs",
-              "RelativeDocumentMoniker": "Models\\Siparis.cs",
-              "ToolTip": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Models\\Siparis.cs",
-              "RelativeToolTip": "Models\\Siparis.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T21:37:23.085Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Iletisim.cs",
-              "DocumentMoniker": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Models\\Iletisim.cs",
-              "RelativeDocumentMoniker": "Models\\Iletisim.cs",
-              "ToolTip": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Models\\Iletisim.cs",
-              "RelativeToolTip": "Models\\Iletisim.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBMAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T21:31:12.366Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IletisimController.cs",
-              "DocumentMoniker": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Controllers\\IletisimController.cs",
-              "RelativeDocumentMoniker": "Controllers\\IletisimController.cs",
-              "ToolTip": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Controllers\\IletisimController.cs",
-              "RelativeToolTip": "Controllers\\IletisimController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAAwCMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T21:30:25.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Kullanici.cs",
-              "DocumentMoniker": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Models\\Kullanici.cs",
-              "RelativeDocumentMoniker": "Models\\Kullanici.cs",
-              "ToolTip": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Models\\Kullanici.cs",
-              "RelativeToolTip": "Models\\Kullanici.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T14:39:17.055Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Data\\DbContext.cs",
-              "RelativeDocumentMoniker": "Data\\DbContext.cs",
-              "ToolTip": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Data\\DbContext.cs",
-              "RelativeToolTip": "Data\\DbContext.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T18:21:12.203Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "KarsilastirmaController.cs",
-              "DocumentMoniker": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Controllers\\KarsilastirmaController.cs",
-              "RelativeDocumentMoniker": "Controllers\\KarsilastirmaController.cs",
-              "ToolTip": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Controllers\\KarsilastirmaController.cs",
-              "RelativeToolTip": "Controllers\\KarsilastirmaController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T21:25:24.104Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T21:25:00.663Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "20250725084332_database.cs",
               "DocumentMoniker": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Migrations\\20250725084332_database.cs",
               "RelativeDocumentMoniker": "Migrations\\20250725084332_database.cs",
@@ -199,7 +183,103 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Iletisim.cs",
+              "DocumentMoniker": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Models\\Iletisim.cs",
+              "RelativeDocumentMoniker": "Models\\Iletisim.cs",
+              "ToolTip": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Models\\Iletisim.cs",
+              "RelativeToolTip": "Models\\Iletisim.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T21:31:12.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "KullaniciController.cs",
+              "DocumentMoniker": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Controllers\\KullaniciController.cs",
+              "RelativeDocumentMoniker": "Controllers\\KullaniciController.cs",
+              "ToolTip": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Controllers\\KullaniciController.cs",
+              "RelativeToolTip": "Controllers\\KullaniciController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAuwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T22:26:14.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Siparis.cs",
+              "DocumentMoniker": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Models\\Siparis.cs",
+              "RelativeDocumentMoniker": "Models\\Siparis.cs",
+              "ToolTip": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Models\\Siparis.cs",
+              "RelativeToolTip": "Models\\Siparis.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T21:37:23.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IletisimController.cs",
+              "DocumentMoniker": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Controllers\\IletisimController.cs",
+              "RelativeDocumentMoniker": "Controllers\\IletisimController.cs",
+              "ToolTip": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Controllers\\IletisimController.cs",
+              "RelativeToolTip": "Controllers\\IletisimController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T21:30:25.677Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "Kullanici.cs",
+              "DocumentMoniker": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Models\\Kullanici.cs",
+              "RelativeDocumentMoniker": "Models\\Kullanici.cs",
+              "ToolTip": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Models\\Kullanici.cs",
+              "RelativeToolTip": "Models\\Kullanici.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T14:39:17.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SiparisUrun.cs",
+              "DocumentMoniker": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Models\\SiparisUrun.cs",
+              "RelativeDocumentMoniker": "Models\\SiparisUrun.cs",
+              "ToolTip": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Models\\SiparisUrun.cs",
+              "RelativeToolTip": "Models\\SiparisUrun.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T21:37:25.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAwEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T21:25:00.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "KarsilastirmaController.cs",
+              "DocumentMoniker": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Controllers\\KarsilastirmaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\KarsilastirmaController.cs",
+              "ToolTip": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Controllers\\KarsilastirmaController.cs",
+              "RelativeToolTip": "Controllers\\KarsilastirmaController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T21:25:24.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "ParcaController.cs",
               "DocumentMoniker": "C:\\Users\\Bartu\\Desktop\\intern_project\\Backend\\Controllers\\ParcaController.cs",
               "RelativeDocumentMoniker": "Controllers\\ParcaController.cs",

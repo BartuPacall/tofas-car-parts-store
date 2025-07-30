@@ -3,6 +3,7 @@ using System;
 using Intern_Project.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Intern_Project.Migrations
 {
     [DbContext(typeof(Intern_ProjectDbContext))]
-    partial class Intern_ProjectDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250728125103_AddPaymentTable")]
+    partial class AddPaymentTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.7");

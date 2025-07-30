@@ -18,6 +18,7 @@ namespace Intern_Project.Data
         public DbSet<SiparisUrun> SiparisUrunler { get; set; }
 
        public DbSet<Iletisim> Iletisimler { get; set; }
+        public DbSet<Payment> Payments { get; set; }
 
 
         // Kategori ve ilişkili mapping kaldırıldı

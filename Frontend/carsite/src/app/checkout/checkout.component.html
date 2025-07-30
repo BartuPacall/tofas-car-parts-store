@@ -42,6 +42,7 @@
     </div>
 
     <!-- Son Kullanma Tarihi -->
+    <!-- Son Kullanma Tarihi -->
     <div class="form-group">
       <label for="expiry">Son Kullanma Tarihi (MM/YY)</label>
       <input
@@ -57,6 +58,9 @@
       />
       <small *ngIf="expiry.invalid && expiry.touched" class="error-text">
         Geçerli bir tarih girin (örn: 05/27).
+      </small>
+      <small *ngIf="expiryMonthInvalid" class="error-text">
+        Ay 12'den büyük olamaz.
       </small>
     </div>
 

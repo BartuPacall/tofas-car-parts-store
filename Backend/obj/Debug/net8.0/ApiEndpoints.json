@@ -340,6 +340,58 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Intern_Project.Controllers.PaymentController",
+    "Method": "PostPayment",
+    "RelativePath": "api/Payment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payment",
+        "Type": "Intern_Project.Models.Payment",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Intern_Project.Controllers.PaymentController",
+    "Method": "GetPayments",
+    "RelativePath": "api/Payment",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Intern_Project.Models.Payment, Intern_Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Intern_Project.Controllers.PaymentController",
+    "Method": "DeletePaymentByCardNumber",
+    "RelativePath": "api/Payment/{cardNumber}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cardNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Intern_Project.Controllers.SiparisController",
     "Method": "GetSiparisler",
     "RelativePath": "api/Siparis",

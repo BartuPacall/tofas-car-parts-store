@@ -599,6 +599,95 @@
         }
       }
     },
+    "/api/Payment": {
+      "post": {
+        "tags": [
+          "Payment"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Payment"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Payment"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Payment"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Payment"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Payment"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Payment"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Payment"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Payment/{cardNumber}": {
+      "delete": {
+        "tags": [
+          "Payment"
+        ],
+        "parameters": [
+          {
+            "name": "cardNumber",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Siparis": {
       "get": {
         "tags": [
@@ -1096,6 +1185,32 @@
           "stokAdedi": {
             "type": "integer",
             "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Payment": {
+        "type": "object",
+        "properties": {
+          "cardName": {
+            "type": "string",
+            "nullable": true
+          },
+          "cardNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "expiry": {
+            "type": "string",
+            "nullable": true
+          },
+          "cvv": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

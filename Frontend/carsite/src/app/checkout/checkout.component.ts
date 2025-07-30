@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { BasketService } from '../basket.service';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { CheckoutService } from '../services/checkout.service';
 
 @Component({
   selector: 'app-payment',
@@ -21,37 +22,39 @@ export class CheckoutComponent {
 
   mapUrl: SafeResourceUrl | null = null;
   paymentSuccess = false;
-
+  expiryMonthInvalid = false;
   constructor(
     private basketService: BasketService,
-    private sanitizer: DomSanitizer
+    private sanitizer: DomSanitizer,
+    private checkoutService: CheckoutService
   ) {}
 
   onSubmit() {
     if (this.paymentForm.invalid) return;
 
-    const today = new Date();
-    const formattedDate = today.toLocaleString(); // Örn: 25.07.2025 17:45:12
+    const paymentPayload = { ...this.paymentData };
 
-    console.log('Ödeme bilgileri:', {
-      ...this.paymentData,
-      date: formattedDate,
+    this.checkoutService.submitPayment(paymentPayload).subscribe({
+      next: (res) => {
+        console.log('Ödeme başarılı:', res);
+        this.paymentSuccess = true;
+        this.basketService.clearCart();
+
+        this.paymentForm.resetForm({
+          cardName: '',
+          cardNumber: '',
+          expiry: '',
+          cvv: '',
+          address: '',
+        });
+
+        this.mapUrl = null;
+      },
+      error: (err) => {
+        console.error('Ödeme sırasında hata:', err);
+        alert('Bir hata oluştu. Lütfen tekrar deneyiniz.');
+      },
     });
-
-    setTimeout(() => {
-      this.paymentSuccess = true;
-      this.basketService.clearCart();
-
-      this.paymentForm.resetForm({
-        cardName: '',
-        cardNumber: '',
-        expiry: '',
-        cvv: '',
-        address: '',
-      });
-
-      this.mapUrl = null;
-    }, 1000);
   }
 
   updateMapUrl() {
@@ -75,9 +78,21 @@ export class CheckoutComponent {
 
   formatExpiry() {
     let rawValue = this.paymentData.expiry.replace(/\D/g, '');
+    this.expiryMonthInvalid = false;
+
     if (rawValue.length > 4) rawValue = rawValue.substring(0, 4);
-    if (rawValue.length > 2) {
-      this.paymentData.expiry = rawValue.replace(/(\d{2})(\d{1,2})/, '$1/$2');
+
+    if (rawValue.length >= 2) {
+      let month = rawValue.substring(0, 2);
+      let year = rawValue.substring(2);
+
+      let monthNumber = parseInt(month, 10);
+
+      if (monthNumber > 12) {
+        this.expiryMonthInvalid = true;
+      }
+
+      this.paymentData.expiry = year ? `${month}/${year}` : `${month}`;
     } else {
       this.paymentData.expiry = rawValue;
     }
