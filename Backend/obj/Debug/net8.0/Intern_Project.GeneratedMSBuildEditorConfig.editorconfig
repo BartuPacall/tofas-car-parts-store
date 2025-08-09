@@ -17,37 +17,37 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Intern_Project
 build_property.RootNamespace = Intern_Project
-build_property.ProjectDir = C:\Users\Bartu\Desktop\intern_project\Backend\
+build_property.ProjectDir = c:\Users\Bartu\Desktop\GithubProjects\tofas-car-parts-store\Backend\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Bartu\Desktop\intern_project\Backend
+build_property.MSBuildProjectDirectory = c:\Users\Bartu\Desktop\GithubProjects\tofas-car-parts-store\Backend
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Bartu/Desktop/intern_project/Backend/Views/Kullanici/Create.cshtml]
+[c:/Users/Bartu/Desktop/GithubProjects/tofas-car-parts-store/Backend/Views/Kullanici/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3VsbGFuaWNpXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bartu/Desktop/intern_project/Backend/Views/Kullanici/Delete.cshtml]
+[c:/Users/Bartu/Desktop/GithubProjects/tofas-car-parts-store/Backend/Views/Kullanici/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3VsbGFuaWNpXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bartu/Desktop/intern_project/Backend/Views/Kullanici/Details.cshtml]
+[c:/Users/Bartu/Desktop/GithubProjects/tofas-car-parts-store/Backend/Views/Kullanici/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3VsbGFuaWNpXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bartu/Desktop/intern_project/Backend/Views/Kullanici/Edit.cshtml]
+[c:/Users/Bartu/Desktop/GithubProjects/tofas-car-parts-store/Backend/Views/Kullanici/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3VsbGFuaWNpXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bartu/Desktop/intern_project/Backend/Views/Kullanici/Index.cshtml]
+[c:/Users/Bartu/Desktop/GithubProjects/tofas-car-parts-store/Backend/Views/Kullanici/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3VsbGFuaWNpXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bartu/Desktop/intern_project/Backend/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/Bartu/Desktop/GithubProjects/tofas-car-parts-store/Backend/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
