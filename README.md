@@ -87,10 +87,10 @@ To run the project locally, make sure you have Node.js, Angular CLI, .NET 8 SDK,
 
 ## Folder Structure
 
-- `Frontend/` - Angular 17 frontend application
-- `Backend/` - .NET Core 8 backend API
-- `Database/` - SQL scripts for PostgreSQL tables and data
-- `script-for-front-images&links/` - Python scripts for data scraping
-- `web-images/` - Screenshots and images from the project
+- `Frontend/` -Angular 17 frontend application
+- `Backend/` -.NET Core 8 backend API
+- `Database/` -SQL scripts for PostgreSQL tables and data
+- `script-for-front-images&links/` -Python scripts for data scraping
+- `web-images/` -Screenshots and images from the project
 
 ---
